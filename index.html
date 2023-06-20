@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Asset/sk.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="Style.css">
+    <title>Dice Game</title>
+</head>
+<body>
+    <div class="item_head">
+        <div class="item_heading">
+            <p>Two Player Dice Game</p>
+        </div>
+        <div class="item_child" id="item_child1">
+            <div class="item_child1">
+                <p id="playerOne" class="item_playerOne"></p>
+                <input type="text" id="item_player1" placeholder="Enter Your Name.... " autocomplete="true" >
+                <button onclick="playerOne()" id="item_dice1">Player 1</button>
+                <span class="item_turn" id="turn1">Roll Dice</span>
+            </div>
+            <div class="item_child2" id="item_child2">
+                <p id="playerTwo"></p>
+                <input type="text" id="item_player2" placeholder="Enter Your Name.... " autocomplete="true">
+                <button onclick="playerTwo()" id="item_dice2"  >Player 2</button>
+                <span id="turn2" class="item_turn">Roll Dice</span>
+            </div>
+        </div>
+        <div class="item_roll">
+            <button onclick="rollDice()" id="item_roll" >Roll Dice</button>
+        </div>
+        <div class="item_result">
+            <img src="./Asset/1.jpg" alt="Not Found" id="item_dice_img">
+            <p id="item_resultOne" class="item_result1"></p>
+            <p id="item_resultTwo" class="item_result2"></p>
+        </div>
+        <div class="item_winner">
+            <span id="winner1"></span>
+            <span id="winner2"></span>
+        </div>
+        <button onclick="newgame()">Reset</button>
+    </div>
+    <script src="./script.js" ></script>
+</body>
+</html>
